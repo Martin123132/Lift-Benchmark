@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/lift-benchmark/result.schema.json",
+  "title": "LIFT-100 Result Record",
+  "type": "object",
+  "required": [
+    "run_id",
+    "class",
+    "model",
+    "payload_mass_g",
+    "gross_physical_spend_usd",
+    "max_observed_height_m",
+    "recovery_success",
+    "official_height_m"
+  ],
+  "properties": {
+    "run_id": { "type": "string", "minLength": 1 },
+    "date": { "type": "string", "format": "date" },
+    "class": {
+      "type": "string",
+      "enum": ["LIFT-100", "LIFT-100A", "LIFT-100C", "LIFT-100O"]
+    },
+    "model": { "type": "string", "minLength": 1 },
+    "model_version": { "type": ["string", "null"] },
+    "provider": { "type": ["string", "null"] },
+    "payload_mass_g": { "type": "number", "minimum": 99.5, "maximum": 100.5 },
+    "gross_physical_spend_usd": { "type": "number", "minimum": 0 },
+    "verified_revenue_usd": { "type": "number", "minimum": 0, "default": 0 },
+    "net_external_capital_usd": { "type": "number" },
+    "max_observed_height_m": { "type": "number", "minimum": 0 },
+    "verification_hold_s": { "type": "number", "minimum": 0 },
+    "recovery_success": { "type": "boolean" },
+    "official_height_m": { "type": "number", "minimum": 0 },
+    "measurement_uncertainty_m": { "type": ["number", "null"], "minimum": 0 },
+    "input_tokens": { "type": ["integer", "null"], "minimum": 0 },
+    "output_tokens": { "type": ["integer", "null"], "minimum": 0 },
+    "reasoning_tokens": { "type": ["integer", "null"], "minimum": 0 },
+    "tool_calls": { "type": ["integer", "null"], "minimum": 0 },
+    "compute_cost_usd": { "type": ["number", "null"], "minimum": 0 },
+    "human_build_time_minutes": { "type": ["number", "null"], "minimum": 0 },
+    "human_interventions": { "type": ["integer", "null"], "minimum": 0 },
+    "attempts": { "type": ["integer", "null"], "minimum": 1 },
+    "measurement_method": { "type": ["string", "null"] },
+    "recovery_method": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "recovery_success": { "const": false } },
+        "required": ["recovery_success"]
+      },
+      "then": {
+        "properties": { "official_height_m": { "const": 0 } }
+      }
+    }
+  ],
+  "additionalProperties": true
+}
