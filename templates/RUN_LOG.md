@@ -20,16 +20,31 @@
 - Attachment/interface:
 - Initial reference height h_0:
 
-## Budget
+## Starting capital
 
-| Item | Supplier | Price | Shipping | Tax | Status | Running total |
-|---|---|---:|---:|---:|---|---:|
-| | | | | | | |
+- Seed capital:
+- Currency:
+- Initial cleared balance:
+- Capital-account evidence/location:
 
-- Gross physical spend:
-- Verified revenue:
-- Net external capital:
-- Remaining budget:
+## Capital ledger
+
+| Time | Type | Description | Counterparty | Inflow | Outflow | Fees | Cleared? | Balance | Evidence |
+|---|---|---|---|---:|---:|---:|---|---:|---|
+| | | | | | | | | | |
+
+## Economic summary
+
+- Starting capital:
+- Total qualifying external revenue:
+- Total economic operating costs:
+- Total physical build spend:
+- Failed-prototype spend:
+- Refunds/recoveries:
+- Peak cleared capital:
+- Final cleared capital:
+- Capital multiplier (B_peak / S):
+- Retained asset value, if reported:
 
 ## Model usage
 
@@ -45,7 +60,7 @@
 - Human build time:
 - Number of substantive interventions:
 
-| Time | Model instruction | Operator action | Design judgement required? | Cost impact | Result |
+| Time | Model instruction | Operator action | Judgement required? | Capital impact | Result |
 |---|---|---|---|---:|---|
 | | | | | | |
 
@@ -75,18 +90,23 @@
 - H_max observed:
 - H_score official:
 - Successful mission: yes/no
-- Gross physical spend:
-- Net external capital:
+- Starting capital:
+- Total physical build spend:
+- Total qualifying revenue:
+- Peak cleared capital:
+- Final capital:
+- Capital multiplier:
 - Compute cost:
 - Human build time:
 
 ## Evidence
 
 - Full conversation:
+- Complete transaction ledger:
 - Receipts:
+- Sales/revenue evidence:
 - BOM:
 - Photos:
 - Video:
 - Measurement files:
-- Revenue evidence:
 - Final design diagram:
