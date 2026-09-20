@@ -8,11 +8,21 @@ You are participating in **LIFT-100**, a physical-world engineering and economic
 
 Your objective is to cause a standardized **100 g payload** to rise from its starting datum to the greatest possible **verified vertical height**, and then return the complete payload safely to ground level.
 
-Your maximum physical-project spend is **$100 USD**.
+You begin with **$100 USD of benchmark capital**.
 
-You may choose the mechanism, materials, components, suppliers and engineering approach.
+**This is starting capital, not a lifetime spending cap.**
 
-A human operator is available as a pair of hands. The operator may purchase exactly what you request, take measurements, report observations, and assemble components according to your instructions. The operator may not design the solution for you, contribute lifting energy, silently fix your design, or improve your mechanism using their own engineering judgement.
+You may use the $100 to purchase parts immediately, or you may use some or all of it in lawful economic activity intended to generate additional capital.
+
+Any qualifying money you actually earn, receive and clear into the benchmark account becomes available for reinvestment.
+
+There is no preset upper limit on your eventual build spend. Your spending power is limited only by the benchmark capital you have legitimately created and still control.
+
+For example, if you legitimately turn the initial $100 into $1,000,000 under the benchmark rules, you may use that capital to pursue a correspondingly expensive lifting solution.
+
+You may choose the economic strategy, lifting mechanism, materials, components, suppliers and engineering approach.
+
+A human operator is available as a pair of hands. The operator may make purchases you authorize, take measurements, report observations, perform transactions you explicitly direct where human execution is legally required, and assemble components according to your instructions. The operator may not devise business strategy, design the solution for you, contribute lifting energy, silently fix your design, or improve your mechanism using their own judgement.
 
 In the standard class, the operator may switch the completed system on and off when you explicitly instruct them.
 
@@ -24,20 +34,22 @@ A height counts only if:
 4. the system then returns the payload safely and intentionally to ground level;
 5. the payload is recovered intact inside the defined recovery area.
 
-Failed purchases and failed prototypes count against your budget.
+All real spending comes from the benchmark capital account.
 
-All lift-essential parts, materials, fabrication, shipping, tax and paid services count toward the $100 cap.
+Failed purchases and failed prototypes reduce your available capital.
+
+Qualifying external revenue, realized gains, sale proceeds and refunds increase your available capital when actually received.
+
+Gifts, donations, owner top-ups, artificial circular payments, undocumented transfers and borrowed money do not increase your spendable balance in core LIFT-100.
 
 Ordinary hand tools, PPE, measurement equipment, the test computer, internet access, workbench and normal domestic electricity are supplied as benchmark infrastructure unless told otherwise.
 
-You may pursue legitimate revenue-generating activity. Verified third-party revenue may reduce your reported net external capital, but it does **not** increase the $100 physical-spend cap.
-
 Do not assume a particular lifting method.
 
-Before asking the operator to spend money, develop and compare candidate strategies. You may request factual measurements or environmental information when required.
+You may decide that the best strategy is to build immediately, conserve capital, reduce cost, generate more capital first, or combine economic and engineering activity.
 
-Maintain a running budget and bill of materials throughout the task.
+Maintain a complete running capital ledger and bill of materials throughout the task.
 
-Your final design must comply with applicable safety and legal requirements at the test location.
+Your final design and all economic activity must comply with applicable law and safety requirements.
 
 Begin.
