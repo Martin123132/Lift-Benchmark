@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The operator supplies hands, measurements and factual observations. The operator does not supply engineering judgement.
+The operator supplies hands, measurements, factual observations and explicitly directed transaction execution. The operator does not supply engineering or business strategy.
 
 ## Before the run
 
@@ -10,8 +10,10 @@ The operator supplies hands, measurements and factual observations. The operator
 2. Record model name, version, provider and account/API configuration.
 3. Provide only the official benchmark prompt.
 4. Record available benchmark infrastructure.
-5. Record the currency-conversion method if purchases are not in USD.
-6. Start the purchase ledger at zero.
+5. Establish the dedicated benchmark capital account.
+6. Credit exactly the class starting capital to that account.
+7. Record the currency-conversion method if transactions are not in USD.
+8. Start the transaction ledger.
 
 ## Allowed operator actions
 
@@ -20,16 +22,22 @@ The operator may:
 - answer factual questions about the test environment;
 - measure requested dimensions, mass, voltage or other quantities;
 - photograph components;
-- buy specifically requested components;
+- execute purchases specifically requested by the model;
+- execute lawful sales/listings/transactions explicitly specified by the model where a human account-holder action is required;
+- report factual transaction outcomes;
 - assemble exactly as instructed;
 - perform ordinary competent workmanship;
 - report that something does not fit, bind, slip, overheat, stall, break or otherwise fail;
-- stop a test immediately for safety.
+- stop a test immediately for safety or legality.
 
 ## Forbidden operator assistance
 
 The operator must not:
 
+- propose a business or revenue strategy;
+- identify customers or negotiate terms unless the model explicitly directs the content/action;
+- contribute personal money beyond the official seed capital;
+- provide gifts or disguised subsidies;
 - propose the lifting mechanism;
 - suggest a motor, pulley, balloon or other approach unless asked for factual inventory information;
 - optimize dimensions;
@@ -40,9 +48,19 @@ The operator must not:
 - contribute energy to the scored lift;
 - physically guide the payload during a scored attempt.
 
+## Transaction rule
+
+The operator may spend only cleared capital currently present in the benchmark account.
+
+The operator must not front money on behalf of the model.
+
+If a transaction would exceed the current cleared balance, it is not executed.
+
+Expected revenue does not count until received.
+
 ## Ambiguity rule
 
-When an instruction requires design judgement:
+When an instruction requires engineering or business judgement:
 
 1. Stop that step.
 2. State exactly what is ambiguous.
@@ -57,11 +75,13 @@ Not acceptable:
 
 > “I drilled it out because that was obviously what you meant.”
 
-## Failed components
+## Failed components and ventures
 
 Purchased components remain charged even if they fail or are abandoned.
 
-Refunds reduce spend only when a real refund is received.
+Money spent attempting to generate additional capital is also a real outflow.
+
+Refunds or sale proceeds return to the account only when actually received.
 
 ## Scored operation
 
@@ -78,15 +98,15 @@ Each substantive intervention records:
 - timestamp;
 - model instruction;
 - operator action;
-- materials affected;
-- whether the action altered the design;
-- cost impact;
+- engineering/business judgement required?;
+- money or materials affected;
+- capital-account impact;
 - result.
 
-## Safety
+## Safety and legality
 
-Safety overrides scoring.
+Safety and legality override scoring.
 
-The operator may stop any action that creates an immediate safety, legal, fire, electrical, structural or aviation risk.
+The operator may stop any action that creates an immediate safety, legal, fire, electrical, structural, financial-platform or aviation risk.
 
-A safety stop is recorded as a failed attempt rather than repaired off-record.
+A stopped action is recorded honestly rather than repaired off-record.
