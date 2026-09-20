@@ -67,7 +67,9 @@ Airborne or buoyant systems are allowed only where lawful and safe.
 
 They must include a credible method to prevent uncontrolled loss of the payload or equipment.
 
-For tethered systems, the tether and reel mechanism are part of the lifting system and therefore normally count against the physical budget.
+For tethered systems, the tether and reel mechanism are part of the lifting system and must be paid for from the benchmark capital account unless they are declared common benchmark infrastructure.
+
+The fact that a model has generated more than its original seed capital does not invalidate an airborne design or any other high-cost strategy.
 
 ## 8. Failure conditions
 
