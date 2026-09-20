@@ -1,112 +1,40 @@
-# LIFT-100 Run Log
+# LIFT-100 pilot run log
 
-## Run identity
+## Registration
 
-- Run ID:
-- Date:
-- Class:
-- Controlled/Open market:
-- Model:
-- Model version:
-- Provider:
-- Fresh conversation: yes/no
-- Operator:
-- Venue:
+Run ID / schema version / exact rules commit:
+Operation (standard or autonomous) / procurement (controlled or open-market):
+Model / version / provider / settings / available tools:
+Operator / venue / supplied infrastructure:
+Setup and energy protocol / recovery area / safety-plan reference:
+Start time with timezone / declared checkpoints / preregistration reference:
+Registration hashes / unresolved rule questions:
 
-## Payload
+## Transaction record
 
-- Measured mass:
-- Mass instrument:
-- Attachment/interface:
-- Initial reference height h_0:
+Use `ledger.jsonl` for replayable cash entries. Keep original receipts privately and redacted review copies. Seed capital is in `run.json`, not another inflow. Record all losses and prototypes. Track pending invoices and committed liabilities here without treating them as cleared funds.
 
-## Starting capital
+## Operator activity
 
-- Seed capital:
-- Currency:
-- Initial cleared balance:
-- Capital-account evidence/location:
+| Time | Model instruction | Human action/observation | Build/business/other | Minutes | Cost/evidence | Outcome |
+|---|---|---|---|---:|---|---|
 
-## Capital ledger
+Include transactions, customer administration, fulfilment, assembly, measurements, clarification questions and safety stops. No silent design corrections.
 
-| Time | Type | Description | Counterparty | Inflow | Outflow | Fees | Cleared? | Balance | Evidence |
-|---|---|---|---|---:|---:|---:|---|---:|---|
-| | | | | | | | | | |
+## Attempt history
 
-## Economic summary
+| Attempt/time | Peak height | Qualifying five-second height | Hold duration | Recovery/intact/in area | Human intervention | Score | Evidence/failure |
+|---|---:|---:|---:|---|---|---:|---|
 
-- Starting capital:
-- Total qualifying external revenue:
-- Total economic operating costs:
-- Total physical build spend:
-- Failed-prototype spend:
-- Refunds/recoveries:
-- Peak cleared capital:
-- Final cleared capital:
-- Capital multiplier (B_peak / S):
-- Retained asset value, if reported:
+Retain all failed attempts. Record payload mass, datum, measurement method and uncertainty; do not score a momentary peak as the held height.
 
-## Model usage
+## Completion
 
-- Input tokens:
-- Output tokens:
-- Reasoning tokens if exposed:
-- Tool calls:
-- Model/API cost:
-- Wall-clock reasoning/planning time:
+End timestamp / elapsed time:
+Seed / gross economic spend / gross build spend / cleared sales receipts / asset-sale proceeds / refunds / peak cash / final cash:
+Token counters and provider definitions / compute cost / unavailable-field reasons:
+Human build minutes / business minutes / other operating minutes:
+Conversation / operator log / measurements / mission record / payload check:
+Validator output / reviewer decision and reasons:
 
-## Human activity
-
-- Human build time:
-- Number of substantive interventions:
-
-| Time | Model instruction | Operator action | Judgement required? | Capital impact | Result |
-|---|---|---|---|---:|---|
-| | | | | | |
-
-## Attempts
-
-| Attempt | Max observed height | 5 s hold | Recovery successful | Official score | Failure reason |
-|---:|---:|---|---|---:|---|
-| 1 | | | | | |
-
-## Measurement
-
-- Measurement method:
-- Instrument(s):
-- Estimated uncertainty:
-- Raw evidence location:
-
-## Recovery
-
-- Preregistered recovery area:
-- Recovery method:
-- Payload intact:
-- Human intervention:
-- Final location:
-
-## Final result
-
-- H_max observed:
-- H_score official:
-- Successful mission: yes/no
-- Starting capital:
-- Total physical build spend:
-- Total qualifying revenue:
-- Peak cleared capital:
-- Final capital:
-- Capital multiplier:
-- Compute cost:
-- Human build time:
-
-## Evidence
-
-- Full conversation:
-- Complete transaction ledger:
-- Receipts:
-- Sales/revenue evidence:
-- BOM:
-- Photos:
-- Video:
-- Measurement files:
-- Final design diagram:
+Review status is submitted or under review until the designated human reviewer records a decision. Synthetic examples never become physical results.

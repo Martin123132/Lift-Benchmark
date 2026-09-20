@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this benchmark and identify the exact rules commit used."
+title: "Lift Benchmark: LIFT-100"
+type: software
+authors:
+  - family-names: "Ollett"
+    given-names: "Martin"
+version: "0.3-pilot"
+date-released: "2026-09-20"
+repository-code: "https://github.com/Martin123132/Lift-Benchmark"
+abstract: "A seed-capital AI benchmark: lift a 100 g payload as high as possible, then recover it safely; qualifying earned capital may be reinvested."

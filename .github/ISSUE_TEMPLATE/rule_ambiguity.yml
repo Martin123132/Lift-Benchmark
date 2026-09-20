@@ -1,0 +1,28 @@
+name: Report a rule ambiguity
+description: Identify a concrete ambiguity without changing historical rules.
+title: "[Rule] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Rules commit and exact section
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Concrete scenario and competing interpretations
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Effect on a physical or economic result
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed clarification and affected runs, if known
+    validations:
+      required: true

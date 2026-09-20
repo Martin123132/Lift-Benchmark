@@ -1,104 +1,51 @@
 # Lift Benchmark
 
-A physical-world AI benchmark for measuring how effectively a model can turn limited starting capital, reasoning and planning into a verified real-world result.
+**Start with $100. Lift 100 g as high as possible. Bring it safely back.**
 
-## Core challenge
+The $100 is **starting capital, not a spending cap**. An AI may buy parts immediately or use lawful, documented economic activity to earn more first. Qualifying cleared earnings are fully reinvestable. A million-dollar build is within scope if the model genuinely generates the capital to fund it.
 
-> Start with a fixed amount of capital. Raise a standardized 100 g payload as high as possible, then return it safely to the ground.
+The human supplies hands and factual observations, not engineering or business strategy and not lifting energy. In the standard class they may switch the system on/off. The autonomous class starts with $140 and operates through the computer interface.
 
-The primary score is deliberately simple:
+**Primary score:** highest verified vertical height maintained for five continuous seconds, conditional on intact, controlled recovery. Record momentary peak height separately.
 
-```text
-H = maximum verified vertical displacement of the 100 g payload
+## Start a pilot
+
+Read [QUICKSTART.md](QUICKSTART.md). With Python 3.11 or newer:
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/lift.py init local-runs/pilot-001 --run-id pilot-001
 ```
 
-A height only becomes an official result after successful recovery.
+This creates incomplete input and result templates. It does not run a model, spend money or operate hardware. Complete and preregister the inputs before starting.
 
-## The key economic rule
-
-**$100 is seed capital, not a spending cap.**
-
-For standard LIFT-100, the model begins with:
-
-```text
-S = $100 USD
+```sh
+python scripts/lift.py seal local-runs/pilot-001
+python scripts/lift.py validate local-runs/pilot-001
+python -m unittest discover -s tests -v
 ```
 
-The model may spend, trade, sell, build, provide services, make products, invest benchmark funds, or otherwise conduct lawful economic activity.
+Validation checks record structure, transaction arithmetic, declared mission conditions, evidence-file presence and preregistration hashes. **It does not authenticate a payment, inspect a video or certify a physical result.** Synthetic test fixtures are rejected by default and are never results.
 
-Any verified money the model legitimately generates becomes part of its available benchmark capital and may be reinvested into the lift.
+## Two independent settings
 
-There is **no upper cap on final project spend**.
+| Setting | Options |
+|---|---|
+| Operation | `standard`: $100 seed; `autonomous`: $140 seed |
+| Procurement | `open-market`: actual transactions; `controlled`: declared catalogue and commercial opportunities |
 
-If a model legitimately turns $100 into $1,000,000, then it may spend up to the capital it has actually generated and controls on the lifting system.
+Compare runs with matching conditions. Long-running capital growth remains allowed; publish elapsed time and declared checkpoints rather than adding a spending ceiling.
 
-The benchmark therefore tests both:
+## Rules and records
 
-1. how effectively the model engineers the physical task; and
-2. how effectively it expands or preserves the capital available to solve it.
-
-## Benchmark classes
-
-| Class | Starting capital | Human role | Purpose |
-|---|---:|---|---|
-| LIFT-100 | $100 | Assemble exactly as instructed; may switch system on/off | Engineering + economic agency |
-| LIFT-100A | $140 | Assemble exactly as instructed; no operating assistance | Engineering + economic agency + autonomous control |
-| LIFT-100C | Fixed seed | Fixed catalogue/prices | Reproducible controlled comparison |
-| LIFT-100O | Fixed seed | Real-market procurement | Real-world sourcing and economic performance |
-
-## Mission
-
-```text
-GROUND -> ASCENT -> VERIFIED MAXIMUM HEIGHT -> CONTROLLED RECOVERY -> GROUND
-```
-
-The benchmark does **not** prescribe the lifting method. Motors, gearing, pulleys, buoyancy, aerodynamic lift, counterweights, repurposed consumer products and hybrid systems are all potentially valid if they satisfy the same safety, evidence and recovery rules.
-
-## Capital accounting
-
-The benchmark maintains a real capital ledger.
-
-```text
-B_0 = starting capital
-
-B_(i+1) = B_i + qualifying cash inflows - cash outflows
-```
-
-A purchase is allowed only if the model has sufficient cleared benchmark capital at that point.
-
-Revenue, realized gains, refunds and proceeds from legitimate sales may increase the balance.
-
-Failed prototypes still consume capital.
-
-Borrowed money, owner top-ups, gifts and artificial transfers do not increase the spendable balance in the core benchmark.
-
-## Reporting
-
-Height remains the headline result. Every run also reports:
-
-- starting capital;
-- total qualifying external revenue;
-- realized economic gains/losses;
-- total physical build spend;
-- peak spendable capital;
-- final capital balance;
-- token usage and model/API cost where measurable;
-- human build time;
-- human interventions;
-- number of attempts and failed purchases/prototypes.
-
-## Repository structure
-
-- [Benchmark specification](docs/SPEC.md)
-- [Capital accounting rules](docs/CAPITAL_ACCOUNTING.md)
-- [Operator protocol](docs/OPERATOR_PROTOCOL.md)
-- [Initial model prompt](docs/MODEL_PROMPT.md)
-- [Measurement and recovery protocol](docs/MEASUREMENT_AND_RECOVERY.md)
-- [Run-log template](templates/RUN_LOG.md)
-- [Machine-readable result schema](schemas/result.schema.json)
+- [Core specification, v0.2](docs/SPEC.md) and [capital principles](docs/CAPITAL_ACCOUNTING.md)
+- [Pilot protocol, v0.3](docs/PILOT_PROTOCOL.md): recording conventions, held-height scoring and rule decisions
+- [Model prompt](docs/MODEL_PROMPT.md), [operator protocol](docs/OPERATOR_PROTOCOL.md) and [measurement/recovery](docs/MEASUREMENT_AND_RECOVERY.md)
+- [Run log](templates/RUN_LOG.md) and [schemas](schemas)
+- [Submission and review guide](CONTRIBUTING.md), [results status](results/README.md) and [changelog](CHANGELOG.md)
 
 ## Status
 
-**Draft v0.2 — September 2026**
+**v0.3-pilot — September 2026.** This release supplies pilot tooling and synthetic software tests. No physical result is claimed by the kit. Core rules not explicitly clarified by the pilot protocol remain unchanged, including the existing equipment/outsourcing restriction pending the creator's decision.
 
-The benchmark is being developed as an auditable physical evaluation. Rules are expected to tighten after pilot runs expose edge cases.
+Created by **Martin Ollett**. Citation metadata is in [CITATION.cff](CITATION.cff). Licence selection remains an owner decision; this release does not add a licence.

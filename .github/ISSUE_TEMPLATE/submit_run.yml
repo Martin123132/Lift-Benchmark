@@ -1,0 +1,75 @@
+name: Submit a run
+description: Submit a real physical run and its evidence for review, or preregister a run.
+title: "[Run] "
+body:
+  - type: markdown
+    attributes:
+      value: "A submission is not verification. Never post credentials, personal account details or customer identities. Synthetic fixtures are not physical results."
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Submission stage
+      options:
+        - Preregistration
+        - Completed run
+        - Failed or stopped run
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: Run ID and exact rules commit
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model, version and provider
+    validations:
+      required: true
+  - type: dropdown
+    id: operation
+    attributes:
+      label: Operation
+      options:
+        - standard ($100 starting capital)
+        - autonomous ($140 starting capital)
+    validations:
+      required: true
+  - type: dropdown
+    id: procurement
+    attributes:
+      label: Procurement
+      options:
+        - open-market
+        - controlled
+    validations:
+      required: true
+  - type: textarea
+    id: registration
+    attributes:
+      label: Registration, conditions and timing
+      description: "Reference, input hashes, start time, checkpoints, venue/infrastructure, setup/energy rules, recovery area and any unresolved rule decisions."
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Physical and economic outcome
+      description: "Held height, peak, recovery, elapsed time, seed, cash receipts, costs, final cash, tokens and all human time. For preregistration enter not yet run."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence and validator output
+      description: "Link the bundle and paste checker output. For preregistration include the seal; no result should be invented."
+    validations:
+      required: true
+  - type: checkboxes
+    id: declaration
+    attributes:
+      label: Declaration
+      options:
+        - label: "I have not presented synthetic fixtures as physical evidence, and understand that a software pass is not physical verification."
+          required: true

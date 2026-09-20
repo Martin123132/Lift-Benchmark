@@ -1,55 +1,23 @@
-# Initial Model Prompt
+# Initial Model Prompt — pilot v0.3
 
-Draft prompt for a standard LIFT-100 run.
+You are participating in LIFT-100, a physical-world engineering and economic benchmark.
 
----
+Raise the complete standardized 100 g payload through the greatest verified vertical height, then return it intact to the declared ground recovery area without human lifting assistance.
 
-You are participating in **LIFT-100**, a physical-world engineering and economic benchmark.
+You begin with **$100 USD of benchmark capital**. This is starting capital, not a spending cap. You may build immediately, earn more capital first, or combine economic and engineering activity. All qualifying cleared proceeds may be reinvested. There is no upper limit on eventual build expenditure.
 
-Your objective is to cause a standardized **100 g payload** to rise from its starting datum to the greatest possible **verified vertical height**, and then return the complete payload safely to ground level.
+The supplied run configuration declares your operation class, procurement environment, available tools, venue, common infrastructure, starting time, checkpoints and applicable rules commit. The governing documents are SPEC.md and PILOT_PROTOCOL.md at that commit. Request any missing rules or factual information before acting; do not invent permissions or restrictions.
 
-You begin with **$100 USD of benchmark capital**.
-
-**This is starting capital, not a lifetime spending cap.**
-
-You may use the $100 to purchase parts immediately, or you may use some or all of it in lawful economic activity intended to generate additional capital.
-
-Any qualifying money you actually earn, receive and clear into the benchmark account becomes available for reinvestment.
-
-There is no preset upper limit on your eventual build spend. Your spending power is limited only by the benchmark capital you have legitimately created and still control.
-
-For example, if you legitimately turn the initial $100 into $1,000,000 under the benchmark rules, you may use that capital to pursue a correspondingly expensive lifting solution.
-
-You may choose the economic strategy, lifting mechanism, materials, components, suppliers and engineering approach.
-
-A human operator is available as a pair of hands. The operator may make purchases you authorize, take measurements, report observations, perform transactions you explicitly direct where human execution is legally required, and assemble components according to your instructions. The operator may not devise business strategy, design the solution for you, contribute lifting energy, silently fix your design, or improve your mechanism using their own judgement.
+A human operator may execute your explicit purchases and transactions, provide requested measurements and observations, and assemble your instructions. They may not supply business strategy, design decisions or lifting energy, wind a mechanism for the lift, silently correct your design, or guide the payload during scored operation.
 
 In the standard class, the operator may switch the completed system on and off when you explicitly instruct them.
 
-A height counts only if:
+The score is the highest independently verified height maintained for at least five continuous seconds, and counts only after successful controlled recovery of the intact payload inside the declared recovery area. A higher momentary peak is recorded separately. Emergency human intervention invalidates that mission's score.
 
-1. the complete 100 g payload reaches it;
-2. the height can be independently verified;
-3. the payload remains at or above the qualifying height for at least 5 seconds;
-4. the system then returns the payload safely and intentionally to ground level;
-5. the payload is recovered intact inside the defined recovery area.
+Maintain a complete transaction ledger. Spend only available cleared benchmark capital. Failed ventures, prototypes, shipping, taxes, materials and paid services consume capital. Genuine sales and refunds return money when received; do not count an invoice or unrealized gain as spendable cash. Owner top-ups, gifts, artificial payments and borrowed money are excluded under the core rules.
 
-All real spending comes from the benchmark capital account.
+Compute and token use are disclosed separately, without a token allowance imposed by this pilot kit. Record unknown usage as unavailable with a reason, not as zero. All human time and substantive interventions must be logged.
 
-Failed purchases and failed prototypes reduce your available capital.
+Follow the declared setup, safety and legal conditions. Ask for clarification when a proposed action depends on an unresolved rule. You choose the strategy; no lifting mechanism is prescribed.
 
-Qualifying external revenue, realized gains, sale proceeds and refunds increase your available capital when actually received.
-
-Gifts, donations, owner top-ups, artificial circular payments, undocumented transfers and borrowed money do not increase your spendable balance in core LIFT-100.
-
-Ordinary hand tools, PPE, measurement equipment, the test computer, internet access, workbench and normal domestic electricity are supplied as benchmark infrastructure unless told otherwise.
-
-Do not assume a particular lifting method.
-
-You may decide that the best strategy is to build immediately, conserve capital, reduce cost, generate more capital first, or combine economic and engineering activity.
-
-Maintain a complete running capital ledger and bill of materials throughout the task.
-
-Your final design and all economic activity must comply with applicable law and safety requirements.
-
-Begin.
+Begin when the registered start time is reached.
