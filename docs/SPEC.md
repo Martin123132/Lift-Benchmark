@@ -1,10 +1,10 @@
 # LIFT-100 Benchmark Specification
 
-Version: **0.1-draft**
+Version: **0.2-draft**
 
 ## 1. Objective
 
-The model must cause a standardized 100 g payload to travel from its initial ground datum to the greatest possible verified vertical displacement and then return safely to ground level.
+The model must use a fixed amount of starting capital to cause a standardized 100 g payload to travel from its initial ground datum to the greatest possible verified vertical displacement and then return safely to ground level.
 
 Primary score:
 
@@ -16,7 +16,31 @@ where `h_0` is the initial payload reference height and `h_max` is the greatest 
 
 If recovery fails, the attempted height is retained for diagnostics but does not become an official score.
 
-## 2. Standard payload
+## 2. Core economic principle
+
+LIFT-100 does **not** impose a $100 lifetime spending cap.
+
+It provides **$100 of starting capital**.
+
+The model may use that capital to create more capital before or during the engineering project.
+
+Verified qualifying proceeds become spendable benchmark capital.
+
+Therefore:
+
+```text
+starting capital = $100
+maximum eventual project spend = not fixed
+actual spending power = capital legitimately created and still controlled by the model
+```
+
+Example:
+
+If a model starts with $100, legitimately grows the benchmark account to $1,000,000, and can document that growth under the benchmark rules, it may use that $1,000,000 to pursue the lift.
+
+Economic expansion is part of the task, not a loophole.
+
+## 3. Standard payload
 
 Target mass:
 
@@ -26,33 +50,39 @@ Target mass:
 
 The payload must be supplied identically to each competitor, use a standard attachment interface, remain intact, and use the same measurement reference point throughout the attempt.
 
-## 3. Standard class — LIFT-100
+## 4. Standard class — LIFT-100
 
-Maximum physical-project spend:
+Starting capital:
 
 ```text
 $100 USD
 ```
 
-The model may choose any lawful and safe physical approach.
+There is no fixed upper cap on later project expenditure.
+
+The model may choose any lawful and safe physical or economic strategy allowed by this specification.
 
 A human operator may purchase exactly what the model requests, perform ordinary fabrication and assembly, take requested measurements, report physical observations, and switch the completed device on/off when instructed.
 
 The human may not supply lifting energy, redesign the system, silently correct engineering errors, choose substitute parts without approval, or guide the payload during scored operation.
 
-## 4. Autonomous class — LIFT-100A
+## 5. Autonomous class — LIFT-100A
 
-Maximum physical-project spend:
+Starting capital:
 
 ```text
 $140 USD
 ```
 
-The additional allowance exists for control hardware such as microcontrollers, relays, sensors, interfaces and communications equipment.
+The extra $40 recognizes the additional interface/control hardware normally required for model-operated physical systems.
+
+As in LIFT-100, the starting amount is seed capital rather than a lifetime spending cap.
+
+Any qualifying capital generated from the benchmark account may be reinvested.
 
 After assembly and test setup, the model must itself issue the control commands that initiate, manage and terminate the scored mission.
 
-## 5. Successful mission
+## 6. Successful mission
 
 A successful mission contains:
 
@@ -71,7 +101,7 @@ H_score = 0      if recovery fails
 
 The failed `H_max` remains part of the run record.
 
-## 6. Lifting method
+## 7. Lifting method
 
 The benchmark is physics-agnostic.
 
@@ -81,7 +111,7 @@ A novel or unexpected mechanism is not an exploit merely because the benchmark d
 
 **Patch trivial completion conditions, not clever engineering.**
 
-## 7. Recovery
+## 8. Recovery
 
 The payload must return safely and intentionally.
 
@@ -91,9 +121,76 @@ Buoyant or airborne designs therefore need a real recovery method: tether retrie
 
 All testing must remain inside the legal and safety envelope of the test location.
 
-## 8. Budget accounting
+## 9. Capital account
 
-All lift-essential equipment is charged.
+Each run has a dedicated benchmark capital account.
+
+Initial balance:
+
+```text
+B_0 = S
+```
+
+For each verified transaction:
+
+```text
+B_(i+1) = B_i + I_i - O_i
+```
+
+where:
+
+- `I_i` = qualifying cleared cash inflow;
+- `O_i` = purchase, fee, tax, shipping charge, loss or other cash outflow.
+
+The model may spend only cleared capital currently available in the benchmark account.
+
+There is no separate ceiling on build cost.
+
+A $250 component is therefore valid if the model has legitimately grown its account above $250.
+
+A $100,000 component is valid if the model has legitimately grown its account enough to buy it.
+
+## 10. Qualifying economic activity
+
+The model may attempt lawful economic activity including, for example:
+
+- selling a product it develops;
+- selling a service;
+- resale or arbitrage using benchmark-owned assets;
+- licensing work created during the run;
+- earning fees or commissions through legitimate work;
+- realizing gains on assets purchased with benchmark capital where permitted by the evaluator;
+- other arm's-length commercial transactions.
+
+Qualifying inflows must be:
+
+- real rather than hypothetical;
+- cleared and available to spend;
+- documented;
+- attributable to actions taken within the benchmark;
+- from an unrelated external counterparty unless the rules of a specific test explicitly state otherwise.
+
+Expected future revenue does not count until received.
+
+## 11. Non-qualifying capital
+
+The following do not increase the spendable benchmark balance in core LIFT-100:
+
+- gifts;
+- donations;
+- owner/funder top-ups;
+- artificial circular transactions;
+- undocumented transfers;
+- money supplied simply because a participant is being benchmarked;
+- borrowed money or credit proceeds.
+
+A future financing variant may test debt or external investment separately, but core LIFT-100 measures what the model can build from its seed capital and value it actually creates.
+
+## 12. Physical project spending
+
+All lift-essential equipment is paid from the benchmark capital account.
+
+Typical outflows include:
 
 ```text
 C_physical =
@@ -105,7 +202,9 @@ C_physical =
 + paid services
 ```
 
-Failed purchases and failed prototypes remain charged.
+Failed purchases and failed prototypes remain real outflows.
+
+Refunds return to the account only when actually received.
 
 Existing equipment is not automatically free. It must be either declared benchmark infrastructure available equally to every model, or charged at an agreed purchase/rental value.
 
@@ -113,25 +212,34 @@ Typical free infrastructure may include ordinary hand tools, workbench, PPE, mea
 
 Anything incorporated into the lifting system is normally chargeable.
 
-## 9. Economic-value track
+## 13. Economic reporting
 
-The model may attempt legitimate economic activity during the run.
+The economic record should preserve the raw ledger rather than collapse everything into one score.
+
+At minimum report:
+
+- starting capital `S`;
+- total qualifying external revenue;
+- total economic operating costs;
+- total physical build spend;
+- peak cleared cash balance `B_peak`;
+- final cash balance `B_final`;
+- value of retained benchmark-owned assets where reported;
+- failed-prototype spend;
+- refunds;
+- complete transaction history.
+
+A useful descriptive secondary quantity is:
 
 ```text
-C_net = C_physical - R
+M_capital = B_peak / S
 ```
 
-where `R` is verified qualifying revenue.
+This capital multiplier is reported alongside height. It is not substituted for the physical score.
 
-Revenue does **not** raise the physical-spend cap.
+## 14. Compute reporting
 
-Qualifying revenue must be lawful, arm's-length, paid by an unrelated third party and documented.
-
-Gifts, donations, owner transfers, artificial circular transactions, loans and gambling proceeds do not qualify.
-
-## 10. Compute reporting
-
-Compute is reported separately from the physical budget.
+Compute is reported separately from the benchmark capital account unless a specific benchmark edition explicitly prices compute into the account.
 
 Record where available:
 
@@ -146,63 +254,80 @@ Record where available:
 - human build time;
 - human interventions.
 
-Optional all-in economics:
+This separation allows researchers to ask both:
 
-```text
-C_all_in = C_physical + C_compute + C_labour - R
-```
+- what physical/economic result the model achieved; and
+- how much inference/computation was required to achieve it.
 
-This does not replace the primary height score.
-
-## 11. Controlled and open-market variants
+## 15. Controlled and open-market variants
 
 ### LIFT-100C
 
-Fixed catalogue, prices and availability.
+Uses fixed commercial opportunities, a fixed component catalogue, fixed prices and standardized availability.
 
-Purpose: reproducibility and direct engineering comparison.
+Purpose: reproducibility and direct comparison.
 
 ### LIFT-100O
 
-Real-market procurement and actual transaction prices.
+Uses real markets, real suppliers and actual transactions.
 
-Purpose: sourcing, substitution and real-world economic performance.
+Purpose: real-world procurement, value creation, substitution and economic performance.
 
 Controlled and open-market results must be identified separately.
 
-## 12. Human-as-compiler rule
+## 16. Human-as-compiler rule
 
-The human builder is an execution interface, not an engineering collaborator.
+The human builder is an execution interface, not an engineering or business collaborator.
 
-If an instruction is incomplete, impossible or materially ambiguous, the operator reports the physical condition to the model and waits for a decision.
+If an instruction is incomplete, impossible or materially ambiguous, the operator reports the factual condition to the model and waits for a decision.
 
-Normal workmanship is allowed. Design judgement is not.
+Normal workmanship is allowed. Design judgement and business strategy from the operator are not.
 
-## 13. No hidden outsourcing
+## 17. No hidden outsourcing of the physical objective
 
-The payload may not simply be placed in an existing lift, crane or other pre-existing lifting machine.
+The payload may not simply be placed in an existing lift, crane or other pre-existing lifting machine and treated as the model's engineering result.
 
-A person may not be paid to perform the physical lift.
+A person may not be paid to physically perform the scored lift.
 
 Repurposing a general-purpose product as a component is allowed.
 
 ```text
 component substitution = allowed
-outsourcing the objective = not allowed
+outsourcing the scored physical objective = not allowed
 ```
 
-## 14. Iteration
+The model may, however, purchase legitimate fabrication or specialist services when those services produce components or capabilities for the model-designed system.
+
+## 18. Iteration
 
 Prototyping, testing, failure and redesign are allowed.
 
-Financial consequences persist. Money spent on failed approaches remains spent.
+Financial consequences persist.
 
-## 15. Repeated evaluation
+Money spent on failed approaches reduces the capital available until and unless some of that value is legitimately recovered.
+
+This means bad physical reasoning can destroy capital, while good planning can preserve it.
+
+## 19. Repeated evaluation
 
 Official comparisons should use at least three independent runs with fresh conversations.
 
-Report individual heights, median official height, best official height, spend per run and failure rate.
+Report individual heights, median official height, best official height, economic ledger outcomes, build spend and failure rate.
 
-## 16. Evidence
+## 20. Evidence
 
-An official run should retain the full model conversation, initial prompt, purchase ledger, receipts, bill of materials, human-action log, build photographs, video of the scored mission, measurement data, failed-attempt records, token/compute accounting, revenue evidence where applicable, and a final design diagram or annotated photograph.
+An official run should retain:
+
+- full model conversation;
+- initial prompt;
+- complete capital ledger;
+- receipts and transaction evidence;
+- bill of materials;
+- human-action log;
+- build photographs;
+- video of the scored mission;
+- measurement data;
+- failed-attempt records;
+- token/compute accounting;
+- evidence for qualifying economic inflows;
+- final design diagram or annotated photograph.
